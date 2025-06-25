@@ -1,0 +1,21 @@
+{
+  "HI": "Ahoj {{name}}!",
+
+  "LANGUAGE" : {
+    "SELECT" : "Vyberte jazyk",
+    "FR": "français",
+    "EN": "english",
+    "CS": "čestina"
+  },
+  "LOGIN": {
+    "USERNAME" : "Uživatelské jméno",
+    "USERNAME_PLACEHOLDER": "Zadejte své uživatelské jméno",
+    "PASSWORD": "Heslo",
+    "PASSWORD_PLACEHOLDER": "Zadjte své heslo",
+    "SUBMIT": "Přihlásit se",
+    "ERRORS": {
+      "USERNAME_REQUIRED": "Zadejte prosím své uživatelské jméno",
+      "PASSWORD_REQUIRED": "Vyplňte prosím své heslo."
+    }
+  }
+}

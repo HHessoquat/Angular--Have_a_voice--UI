@@ -1,0 +1,8 @@
+<app-lang-switcher />
+<button (click)="showModal()">login</button>
+@if(isModalOpen) {
+  <app-modal (close)="showModal(false)">
+    <app-login-form />
+  </app-modal>
+}
+

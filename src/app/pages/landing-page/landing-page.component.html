@@ -1,0 +1,14 @@
+<h1> {{ 'HI' | transloco: {name: "bob"} }} </h1>
+@if (res | async; as response) {
+  @if (response.code === Businesscode.ELECTION_RETRIEVED && response.body.length > 0) {
+    <p>En construction</p>
+  } @else {
+    <p>
+      {{ response.code === Businesscode.ELECTION_RETRIEVED ?
+      "Il n'y a pas d'élection à afficher"
+      : response.message }}
+    </p>
+  }
+  <app-login-form />
+}
+

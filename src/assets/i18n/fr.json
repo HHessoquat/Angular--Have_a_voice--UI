@@ -1,0 +1,22 @@
+{
+  "HI": "Coucou {{name}} !",
+
+  "LANGUAGE" : {
+    "SELECT" : "Sélectionnez une langue",
+    "FR": "français",
+    "EN": "english",
+    "CS": "čestina"
+  },
+
+  "LOGIN": {
+    "USERNAME" : "Identifant",
+    "USERNAME_PLACEHOLDER": "Nom d'utilisateur",
+    "PASSWORD": "Mots de passe",
+    "PASSWORD_PLACEHOLDER": "password",
+    "SUBMIT": "Connexion",
+    "ERRORS": {
+      "USERNAME_REQUIRED": "Veuillez renseignez votre nom d'utilisateur",
+      "PASSWORD_REQUIRED": "Vous devez renseigner un mot de passe"
+    }
+  }
+}

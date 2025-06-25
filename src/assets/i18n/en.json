@@ -1,0 +1,20 @@
+{
+  "HI": "Hi {{name}}!",
+  "LANGUAGE" : {
+    "SELECT" : "select a language",
+    "FR": "français",
+    "EN": "english",
+    "CS": "čestina"
+  },
+  "LOGIN": {
+    "USERNAME" : "username",
+    "USERNAME_PLACEHOLDER": "enter your username",
+    "PASSWORD": "Password",
+    "PASSWORD_PLACEHOLDER": "Password",
+    "SUBMIT": "Log in",
+    "ERRORS": {
+      "USERNAME_REQUIRED": "The username is required",
+      "PASSWORD_REQUIRED": "Please, enter your password"
+    }
+  }
+}
