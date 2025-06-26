@@ -1,0 +1,9 @@
+<div class="bg-primary-light p-2.5">
+  <select (change)="onChange($event)" id="lang">
+    @for (lang of availableLangs; track lang) {
+      <option [value]="lang" [selected]="lang === currentLang">{{ "LANGUAGE." + lang.toUpperCase() | transloco }}
+      </option>
+    }
+
+  </select>
+</div>

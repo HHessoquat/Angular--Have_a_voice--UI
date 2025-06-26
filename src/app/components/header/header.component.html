@@ -1,8 +1,17 @@
-<app-lang-switcher />
-<button (click)="showModal()">login</button>
-@if(isModalOpen) {
-  <app-modal (close)="showModal(false)">
-    <app-login-form />
-  </app-modal>
-}
+<header id="main-header" class="bg-primary text-white">
+  <div>
+    <img class="logo" src="" />
+  </div>
+  <input />
+  <div class="flex gap-2">
+    <app-lang-switcher/>
+    <app-theme-switcher/>
+    <button class="bg-white text-black p-2.5" (click)="showModal()">login</button>
+  </div>
+</header>
+  @if (isModalOpen) {
+    <app-modal (close)="showModal(false)">
+      <app-login-form/>
+    </app-modal>
+  }
 

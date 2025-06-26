@@ -6,6 +6,10 @@
     "EN": "english",
     "CS": "čestina"
   },
+  "THEME": {
+    "light": "light",
+    "dark": "dark"
+  },
   "LOGIN": {
     "USERNAME" : "username",
     "USERNAME_PLACEHOLDER": "enter your username",
@@ -16,5 +20,8 @@
       "USERNAME_REQUIRED": "The username is required",
       "PASSWORD_REQUIRED": "Please, enter your password"
     }
+  },
+  "ELECTIONS" : {
+    "EMPTY": "No election created yet"
   }
 }

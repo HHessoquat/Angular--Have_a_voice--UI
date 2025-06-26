@@ -6,12 +6,12 @@ import ApiResponse from '../../models/ApiResponse';
 import Election from '../../models/Election';
 import {AsyncPipe} from '@angular/common';
 import {Businesscode} from '../../shared/constants/Businesscode';
-import {LoginFormComponent} from '../../components/login-form/login-form.component';
+import {LoginFormComponent} from '../../components/forms/login-form/login-form.component';
 
 
 @Component({
   selector: 'app-landing-page',
-  imports: [TranslocoPipe,AsyncPipe, LoginFormComponent],
+  imports: [TranslocoPipe,AsyncPipe],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })

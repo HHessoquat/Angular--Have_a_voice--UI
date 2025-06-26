@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {FormGroup, ReactiveFormsModule} from '@angular/forms';
-import {FormService} from '../../services/form.service';
+import {FormService} from '../../../services/form.service';
 import {TranslocoPipe} from '@jsverse/transloco';
-import {AuthService} from '../../services/auth.service';
+import {AuthService} from '../../../services/auth.service';
 
 @Component({
   selector: 'app-login-form',

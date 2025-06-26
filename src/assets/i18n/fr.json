@@ -7,7 +7,10 @@
     "EN": "english",
     "CS": "čestina"
   },
-
+  "THEME": {
+    "light": "clair",
+    "dark": "sombre"
+  },
   "LOGIN": {
     "USERNAME" : "Identifant",
     "USERNAME_PLACEHOLDER": "Nom d'utilisateur",
@@ -18,5 +21,8 @@
       "USERNAME_REQUIRED": "Veuillez renseignez votre nom d'utilisateur",
       "PASSWORD_REQUIRED": "Vous devez renseigner un mot de passe"
     }
+  },
+  "ELECTIONS" : {
+    "EMPTY": "Il n'y a pas encore d'élection"
   }
 }

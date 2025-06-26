@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-background: var(--background);
+}
+
+@layer base {
+  :root {
+    --primary: #600055;
+    --primary-light: #BC0090;
+    --background: #FFF;
+  }
+
+  .dark{
+    --primary: #BC0090;
+    --primary-light: #FF00BE;
+    --background: #0f172a;
+  }
+}

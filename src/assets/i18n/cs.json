@@ -7,6 +7,10 @@
     "EN": "english",
     "CS": "čestina"
   },
+  "THEME": {
+    "light": "světlé",
+    "dark": "tmavé"
+  },
   "LOGIN": {
     "USERNAME" : "Uživatelské jméno",
     "USERNAME_PLACEHOLDER": "Zadejte své uživatelské jméno",
@@ -17,5 +21,8 @@
       "USERNAME_REQUIRED": "Zadejte prosím své uživatelské jméno",
       "PASSWORD_REQUIRED": "Vyplňte prosím své heslo."
     }
+  },
+  "ELECTIONS" : {
+    "EMPTY": "Žadné volby"
   }
 }

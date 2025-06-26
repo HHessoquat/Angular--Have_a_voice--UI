@@ -1,9 +1,0 @@
-
-  <label for="lang">{{ "LANGUAGE.SELECT" | transloco }}</label>
-  <select (change)="onChange($event)" id="lang">
-    @for(lang of availableLangs; track lang) {
-      <option [value]="lang" [selected]="lang === currentLang">{{ "LANGUAGE." + lang.toUpperCase() | transloco }}</option>
-    }
-
-  </select>
-
