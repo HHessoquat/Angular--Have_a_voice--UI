@@ -1,4 +1,4 @@
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
+<form class="justify-center items-center" [formGroup]="form" (ngSubmit)="onSubmit()">
   <label for="electionName">{{'ELECTION.NAME' | transloco}}</label>
   <input
     id="electionName"
@@ -21,19 +21,21 @@
     type="datetime-local"
     formControlName="dateEnd"
   >
-  <div class="py-2 flex flex-col justify-center gap-4">
+  <div class="py-2 flex flex-col justify-center items-center gap-4 w-full">
     <button
       type="button"
-      class="primary-btn"
+      class="primary-btn w-1/5"
       (click)="addChoice()"
     >
       {{ 'ELECTION.ADD_CHOICE' |transloco }}
     </button>
     <div class="flex flex-wrap gap-2 justify-evenly">
       @for (choiceForm of getChoice().controls; track $index) {
-        <app-add-choice [choice]="choiceForm"/>
+        <app-add-choice [choice]="choiceForm" (removeChoice)="removeChoice($index)"/>
       }
     </div>
   </div>
-  <button class="submitForm" type="submit" [disabled]="form.invalid">{{"GENERAL.BUTTON.SUBMIT" | transloco}}</button>
+  <button class="submitForm w-1/5" type="submit" [disabled]="form.invalid">
+    {{"GENERAL.BUTTON.SUBMIT" | transloco}}
+  </button>
 </form>

@@ -2,6 +2,7 @@
 @theme inline {
   --color-primary: var(--primary);
   --color-primary-light: var(--primary-light);
+  --color-light-grey: var(--main-grey);
   --color-contrast: var(--contrast);
   --color-background: var(--background);
   --color-text: var(--text);
@@ -12,6 +13,7 @@
   :root {
     --primary: #600055;
     --primary-light: #BC0090;
+    --main-grey: #EEE;
     --contrast: #6BF;
     --background: #FFF;
     --text: #000;
@@ -19,8 +21,9 @@
   }
 
   .dark{
-    --primary: #BC0090;
-    --primary-light: #FF00BE;
+    --primary: #EF60BC;
+    --primary-light: #FF80E2;
+    --main-grey: #303030;
     --contrast: #026;
     --background: #0f172a;
     --text: #EBE;

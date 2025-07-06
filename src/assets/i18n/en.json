@@ -2,7 +2,8 @@
   "HI": "Hi {{name}}!",
   "GENERAL": {
     "BUTTON": {
-      "SUBMIT": "Submit"
+      "SUBMIT": "Submit",
+      "REMOVE": "Remove"
     }
   },
   "LANGUAGE" : {

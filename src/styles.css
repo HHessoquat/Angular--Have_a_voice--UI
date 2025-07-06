@@ -12,15 +12,21 @@ form {
   border-radius: 8px;
 }
 form .textInput {
-  border: 2px solid var(--primary);
+  background-color: var(--main-grey);
+  border-radius: 8px;
+  text-align: center;
   padding: 0.6em;
 }
 form .submitForm {
   background-color: var(--primary);
+  color: var(--anti-text);
+  padding: 0.6em;
+  border-radius: 8px;
 }
 form .submitForm:disabled {
   background-color: #404040;
   color: white;
+  border: 2px solid var(--text);
 }
 form .primary-btn {
   background-color: var(--primary);

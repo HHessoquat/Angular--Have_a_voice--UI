@@ -2,7 +2,8 @@
   "HI": "Coucou {{name}} !",
   "GENERAL": {
     "BUTTON": {
-      "SUBMIT": "Valider"
+      "SUBMIT": "Valider",
+      "REMOVE": "Supprimer"
     }
   },
 

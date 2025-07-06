@@ -50,7 +50,7 @@ export class FormService {
   }
   initChoiceForm(): FormGroup {
     return this.formBuilder.group({
-      name: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(200)]],
+      name: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(200)]],
       picture: [''],
       description: ['', Validators.maxLength(250)],
     });
@@ -60,8 +60,9 @@ export class FormService {
       throw new Error('wrong form');
     }
     let choices = electionForm.get('choices') as FormArray;
-
     (electionForm.get('choices') as FormArray).push(this.initChoiceForm());
-
+  }
+  removeChoice(electionForm: FormGroup, index: number): void {
+    (electionForm.get('choices') as FormArray).removeAt(index);
   }
 }

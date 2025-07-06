@@ -38,4 +38,8 @@ export class AddElectionComponent implements OnInit{
   }
 
     protected readonly FormGroup = FormGroup;
+
+  removeChoice(index: number) {
+    this.formService.removeChoice(this.form, index)
+  }
 }

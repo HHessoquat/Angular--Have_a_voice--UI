@@ -2,7 +2,8 @@
   "HI": "Ahoj {{name}}!",
   "GENERAL": {
     "BUTTON": {
-      "SUBMIT": "předložit"
+      "SUBMIT": "předložit",
+      "REMOVE": "Odstranit"
     }
   },
 
