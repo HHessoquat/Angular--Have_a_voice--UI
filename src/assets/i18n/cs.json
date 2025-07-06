@@ -1,5 +1,10 @@
 {
   "HI": "Ahoj {{name}}!",
+  "GENERAL": {
+    "BUTTON": {
+      "SUBMIT": "předložit"
+    }
+  },
 
   "LANGUAGE" : {
     "SELECT" : "Vyberte jazyk",
@@ -24,5 +29,18 @@
   },
   "ELECTIONS" : {
     "EMPTY": "Žadné volby"
+  },
+  "ELECTION": {
+    "NAME": "Nàzev",
+    "NAME_PLACEHOLDER": "Název voleb",
+    "DATE_START": "datum zahájení voleb",
+    "DATE_END": "datum ukončení voleb",
+    "ADD_CHOICE": "přidat volbu"
+  },
+  "CHOICE": {
+    "NAME": "Jméno",
+    "NAME_PLACEHOLDER": "Přidejte jméno",
+    "PICTURE": "Obrázek",
+    "DESCRIPTION": "Popis"
   }
 }

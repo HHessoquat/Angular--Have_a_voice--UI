@@ -1,5 +1,5 @@
 <select class="p-2.5 bg-primary-light" (change)="onChange($event)">
-  @for (theme of themes; track themes) {
+  @for (theme of themes; track theme) {
     <option [value]="theme">{{"THEME."+theme |transloco}}</option>
   }
 </select>

@@ -1,0 +1,26 @@
+<form [formGroup]="choice">
+  <label for="choiceName"> {{"CHOICE.NAME" | transloco}}
+    <input
+      id="choiceName"
+      class="textInput"
+      type="text"
+      placeholder="{{'CHOICE.NAME_PLACEHOLDER' |transloco}}"
+      formControlName="name"
+    >
+  </label>
+  <label for="choicePicture"> {{"CHOICE.PICTURE" | transloco}}
+    <input
+      id="choicePicture"
+      type="file"
+      formControlName="picture"
+    >
+  </label>
+  <label for="choiceDescription"> {{"CHOICE.DESCRIPTION" | transloco}}
+    <input
+      id="choiceDescription"
+      class="textInput"
+      type="text"
+      formControlName="description"
+    >
+  </label>
+</form>

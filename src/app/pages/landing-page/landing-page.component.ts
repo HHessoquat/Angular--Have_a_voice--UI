@@ -7,11 +7,12 @@ import Election from '../../models/Election';
 import {AsyncPipe} from '@angular/common';
 import {Businesscode} from '../../shared/constants/Businesscode';
 import {LoginFormComponent} from '../../components/forms/login-form/login-form.component';
+import {AddElectionComponent} from '../../components/forms/add-election/add-election.component';
 
 
 @Component({
   selector: 'app-landing-page',
-  imports: [TranslocoPipe,AsyncPipe],
+  imports: [TranslocoPipe,AsyncPipe, AddElectionComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })

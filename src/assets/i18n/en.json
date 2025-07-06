@@ -1,5 +1,10 @@
 {
   "HI": "Hi {{name}}!",
+  "GENERAL": {
+    "BUTTON": {
+      "SUBMIT": "Submit"
+    }
+  },
   "LANGUAGE" : {
     "SELECT" : "select a language",
     "FR": "français",
@@ -23,5 +28,18 @@
   },
   "ELECTIONS" : {
     "EMPTY": "No election created yet"
+  },
+  "ELECTION": {
+    "NAME": "Name",
+    "NAME_PLACEHOLDER": "Election's name",
+    "DATE_START": "Opening date",
+    "DATE_END": "Closing date",
+    "ADD_CHOICE": "Add a choice"
+  },
+  "CHOICE": {
+    "NAME": "Name",
+    "NAME_PLACEHOLDER": "Insert the choice's name",
+    "PICTURE": "Picture",
+    "DESCRIPTION": "Description"
   }
 }

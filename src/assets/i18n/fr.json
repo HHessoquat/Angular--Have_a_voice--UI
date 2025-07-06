@@ -1,5 +1,10 @@
 {
   "HI": "Coucou {{name}} !",
+  "GENERAL": {
+    "BUTTON": {
+      "SUBMIT": "Valider"
+    }
+  },
 
   "LANGUAGE" : {
     "SELECT" : "Sélectionnez une langue",
@@ -24,5 +29,18 @@
   },
   "ELECTIONS" : {
     "EMPTY": "Il n'y a pas encore d'élection"
+  },
+  "ELECTION": {
+    "NAME": "Nom",
+    "NAME_PLACEHOLDER": "Nom de l'élection",
+    "DATE_START": "Date d'ouverture",
+    "DATE_END": "Date de clôture",
+    "ADD_CHOICE": "Ajouter un choix"
+  },
+  "CHOICE": {
+    "NAME": "Nom",
+    "NAME_PLACEHOLDER": "Indiquez le nom du choix",
+    "PICTURE": "Image",
+    "DESCRIPTION": "Description"
   }
 }

@@ -1,6 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   background-color: var(--background);
+  color: var(--text);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.1em;
+  border: 2px solid var(--primary-light);
+  border-radius: 8px;
+}
+form .textInput {
+  border: 2px solid var(--primary);
+  padding: 0.6em;
+}
+form .submitForm {
+  background-color: var(--primary);
+}
+form .submitForm:disabled {
+  background-color: #404040;
+  color: white;
+}
+form .primary-btn {
+  background-color: var(--primary);
+  color: var(--anti-text);
+  border: 2px solid var(--contrast);
+  padding: 0.6em;
+  border-radius: 8px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,1 +1,39 @@
-<p>add-election works!</p>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label for="electionName">{{'ELECTION.NAME' | transloco}}</label>
+  <input
+    id="electionName"
+    class="textInput"
+    type="text"
+    formControlName="name"
+    placeholder="{{'ELECTION.NAME_PLACEHOLDER' | transloco}}"
+  >
+  <label for="dateStart">{{'ELECTION.DATE_START' | transloco}}</label>
+  <input
+    id="dateStart"
+    class="textInput"
+    type="datetime-local"
+    formControlName="dateStart"
+  >
+  <label for="dateEnd">{{'ELECTION.DATE_END' | transloco}}</label>
+  <input
+    id="dateEnd"
+    class="textInput"
+    type="datetime-local"
+    formControlName="dateEnd"
+  >
+  <div class="py-2 flex flex-col justify-center gap-4">
+    <button
+      type="button"
+      class="primary-btn"
+      (click)="addChoice()"
+    >
+      {{ 'ELECTION.ADD_CHOICE' |transloco }}
+    </button>
+    <div class="flex flex-wrap gap-2 justify-evenly">
+      @for (choiceForm of getChoice().controls; track $index) {
+        <app-add-choice [choice]="choiceForm"/>
+      }
+    </div>
+  </div>
+  <button class="submitForm" type="submit" [disabled]="form.invalid">{{"GENERAL.BUTTON.SUBMIT" | transloco}}</button>
+</form>
