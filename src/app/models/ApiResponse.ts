@@ -1,5 +1,5 @@
 export default interface ApiResponse<T> {
-  code: String;
+  code: string;
   message: string;
   body:T
 }

@@ -14,9 +14,6 @@ export class ApiService {
   baseUrl: string = environment.apiUrl + environment.baseUrl;
   constructor(private http: HttpClient) {}
 
-  getAllElections(this: any): Observable<ApiResponse<Election[]>> {
-    return this.http.get(this.baseUrl + 'elections', {withCredentials: true});
-  }
 
   login(credentials: Credentials): Observable<ApiResponse<LoginResponse | null>> {
     return this.http.post<ApiResponse<LoginResponse>>(environment.apiUrl + 'login', credentials)
@@ -41,4 +38,13 @@ export class ApiService {
       && typeof obj.message === 'string'
       && 'body' in obj;
   }
+
+  getAllElections(this: any): Observable<ApiResponse<Election[]>> {
+    return this.http.get(this.baseUrl + 'elections', {withCredentials: true});
+  }
+
+  addElection(election: Election): Observable<ApiResponse<Election>> {
+    return this.http.post<ApiResponse<Election>>(this.baseUrl + 'elections', election)
+  }
+
 }

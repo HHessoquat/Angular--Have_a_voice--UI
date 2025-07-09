@@ -3,6 +3,9 @@ import {FormArray, FormGroup, ReactiveFormsModule} from '@angular/forms';
 import {FormService} from '../../../services/form.service';
 import {TranslocoPipe} from '@jsverse/transloco';
 import {AddChoiceComponent} from '../add-choice/add-choice.component';
+import {take, tap} from 'rxjs';
+import ApiResponse from '../../../models/ApiResponse';
+import Election from '../../../models/Election';
 
 @Component({
   selector: 'app-add-election',
@@ -30,7 +33,12 @@ export class AddElectionComponent implements OnInit{
 
   onSubmit() {
     console.log('submitted');
-    //TODO
+    this.formService.submitElection(this.form).pipe(
+      take(1),
+      tap((code: string) => {
+        console.log(code);
+      })
+    ).subscribe()
   }
 
   addChoice() {
